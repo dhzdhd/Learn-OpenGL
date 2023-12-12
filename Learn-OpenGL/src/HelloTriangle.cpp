@@ -43,10 +43,10 @@ int main() {
 	};
 
 	// Read shader code from file
-	std::ifstream ifs("triangle.vert");
+	std::ifstream ifs("src/shaders/triangle.vert");
 	std::string vert((std::istreambuf_iterator<char>(ifs)),
 		(std::istreambuf_iterator<char>()));
-	std::ifstream ifs1("triangle.frag");
+	std::ifstream ifs1("src/shaders/triangle.frag");
 	std::string frag((std::istreambuf_iterator<char>(ifs1)),
 				(std::istreambuf_iterator<char>()));
 	const char *vert_c = vert.c_str();
