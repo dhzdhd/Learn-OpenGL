@@ -22,4 +22,8 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="triangle.vert" />
+    <None Include="triangle.frag" />
+  </ItemGroup>
 </Project>
