@@ -104,12 +104,14 @@ int main() {
 
 	glBindVertexArray(VAO); // Bind VAO first then bind and set VBOs and then configure vertex attributes
 	
+	// Binding implies making active buffer
 	glBindBuffer(GL_ARRAY_BUFFER, VBO); // Bind buffer to GL_ARRAY_BUFFER type
 	// Copy data to buffer	
 	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 
 
 	// Tell OpenGL how to interpret vertex data
+	// 0th attribute in vertex shader
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
 	glEnableVertexAttribArray(0);
 
@@ -123,7 +125,6 @@ int main() {
 	// Modifying other VAOs requires a call to glBindVertexArray anyways 
 	// so we generally don't unbind VAOs (nor VBOs) when it's not directly necessary.
 	glBindVertexArray(0);
-
 	
 	// Render loop	
 	while (!glfwWindowShouldClose(window)) {
@@ -136,14 +137,22 @@ int main() {
 
 		// Use our shader program when we want to render an object
 		glUseProgram(shaderProgram);
+		// As a single VAO exists, no need to bind it every time but we do it anyways
 		glBindVertexArray(VAO);
 		glDrawArrays(GL_TRIANGLES, 0, 3);
+
+		// glBindVertexArray(0); // No need to unbind it every time
 
 		// Check and call events and swap the buffers
 		glfwSwapBuffers(window);
 		glfwPollEvents();
 			
 	}
+
+	// Optional: de-allocate all resources once they've outlived their purpose
+	glDeleteVertexArrays(1, &VAO);
+	glDeleteBuffers(1, &VBO);
+	glDeleteProgram(shaderProgram);	
 
 	glfwTerminate();
 	return 0;

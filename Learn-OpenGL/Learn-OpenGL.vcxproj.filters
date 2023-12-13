@@ -18,7 +18,7 @@
     <ClCompile Include="src\glad\glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\HelloTriangle.cpp">
+    <ClCompile Include="src\TwoTriangles.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -27,6 +27,15 @@
       <Filter>Source Files</Filter>
     </None>
     <None Include="src\shaders\triangle.vert">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\shaders\twotriangles1.frag">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\shaders\twotriangles2.frag">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\shaders\twotriangles.vert">
       <Filter>Source Files</Filter>
     </None>
   </ItemGroup>

@@ -132,12 +132,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <!-- <ClCompile Include="src\Rectangle.cpp" /> -->
     <ClCompile Include="src\glad\glad.c" />
-    <ClCompile Include="src\HelloTriangle.cpp" />
+    <ClCompile Include="src\TwoTriangles.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="src\shaders\triangle.frag" />
     <None Include="src\shaders\triangle.vert" />
+    <None Include="src\shaders\twotriangles.vert" />
+    <None Include="src\shaders\twotriangles1.frag" />
+    <None Include="src\shaders\twotriangles2.frag" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
