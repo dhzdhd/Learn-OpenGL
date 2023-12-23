@@ -135,13 +135,16 @@
     <!-- <ClCompile Include="src\Rectangle.cpp" /> -->
     <ClCompile Include="src\glad\glad.c" />
     <ClCompile Include="src\include\LoadShader.cpp" />
-    <ClCompile Include="src\MultiColorShader.cpp" />
+    <ClCompile Include="src\stb_image\stb_image.cpp" />
+    <ClCompile Include="src\Texture.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="src\shaders\multicolorshader.frag" />
     <None Include="src\shaders\multicolorshader.vert" />
     <None Include="src\shaders\shader.frag" />
     <None Include="src\shaders\shader.vert" />
+    <None Include="src\shaders\texture.frag" />
+    <None Include="src\shaders\texture.vert" />
     <None Include="src\shaders\triangle.frag" />
     <None Include="src\shaders\triangle.vert" />
     <None Include="src\shaders\twotriangles.vert" />
@@ -150,6 +153,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\include\LoadShader.h" />
+    <ClInclude Include="src\stb_image\stb_image.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -18,10 +18,13 @@
     <ClCompile Include="src\glad\glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\MultiColorShader.cpp">
+    <ClCompile Include="src\include\LoadShader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\include\LoadShader.cpp">
+    <ClCompile Include="src\Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stb_image\stb_image.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -53,10 +56,19 @@
     <None Include="src\shaders\multicolorshader.vert">
       <Filter>Source Files</Filter>
     </None>
+    <None Include="src\shaders\texture.vert">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\shaders\texture.frag">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\stb_image\stb_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="src\include\LoadShader.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
