@@ -136,7 +136,7 @@
     <ClCompile Include="src\glad\glad.c" />
     <ClCompile Include="src\include\LoadShader.cpp" />
     <ClCompile Include="src\stb_image\stb_image.cpp" />
-    <ClCompile Include="src\Texture.cpp" />
+    <ClCompile Include="src\Transform.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="src\shaders\multicolorshader.frag" />
@@ -145,6 +145,8 @@
     <None Include="src\shaders\shader.vert" />
     <None Include="src\shaders\texture.frag" />
     <None Include="src\shaders\texture.vert" />
+    <None Include="src\shaders\transform.frag" />
+    <None Include="src\shaders\transform.vert" />
     <None Include="src\shaders\triangle.frag" />
     <None Include="src\shaders\triangle.vert" />
     <None Include="src\shaders\twotriangles.vert" />

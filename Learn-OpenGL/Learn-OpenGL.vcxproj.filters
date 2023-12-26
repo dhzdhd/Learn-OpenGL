@@ -21,10 +21,10 @@
     <ClCompile Include="src\include\LoadShader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Texture.cpp">
+    <ClCompile Include="src\stb_image\stb_image.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\stb_image\stb_image.cpp">
+    <ClCompile Include="src\Transform.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -60,6 +60,12 @@
       <Filter>Source Files</Filter>
     </None>
     <None Include="src\shaders\texture.frag">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\shaders\transform.vert">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\shaders\transform.frag">
       <Filter>Source Files</Filter>
     </None>
   </ItemGroup>
