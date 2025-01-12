@@ -133,10 +133,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <!-- <ClCompile Include="src\Rectangle.cpp" /> -->
+    <ClCompile Include="src\Coordinate.cpp" />
     <ClCompile Include="src\glad\glad.c" />
     <ClCompile Include="src\include\LoadShader.cpp" />
     <ClCompile Include="src\stb_image\stb_image.cpp" />
-    <ClCompile Include="src\Transform.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="src\shaders\multicolorshader.frag" />
